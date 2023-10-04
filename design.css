@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----------------------------Background Video----------------------------*/
+
+video{
+    width: 100%;
+    z-index: -10000;
+}
+
+/*----------------------------------- Form Transparent Background--------------------------------------*/
+
+.container{
+    border: 2px solid transparent;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width:90%;
+    max-width: 350px;
+    text-align: center;
+    background: transparent;
+    padding: 40px 30px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(9px);
+    box-shadow: 4px 4px 10px rgba(158, 158, 158, 0.389),
+    -4px -2px 10px rgba(158, 158, 158, 0.389);
+}
+
+/*--------------------------------------Form Headings -----------------------------------------------*/
+
+.container h1{
+    /* background: transparent; */
+    color: rgb(34, 34, 34); 
+    margin-bottom: 12px;  
+}
+
+.container h1::after{
+    content: ' ';
+    width:300px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    background: #fff1c0;
+    top: 95px;
+    left:50px;  
+}
+
+/*---------------------------------------------Input Box------------------------------------------*/
+
+.container .form_input{
+   background: transparent; 
+   margin: 25px 0px 5px;
+   width: 99%; 
+   display: flex; 
+   border-radius: 40px; 
+   border: 2px solid rgba(255, 248, 239, 0.6);
+}
+
+ .form_input>input{
+    border:0;
+    outline: 0;
+    width: 90%;
+    padding: 18px 15px; 
+    background: transparent;   
+    color: rgb(238, 231, 222);
+}
+
+.form_input>input::placeholder{
+    color: aliceblue;
+    font-size:small;
+}
+
+.form_input i{
+    margin-left: 15px;
+    margin-top: 20px;
+    color: rgba(255, 248, 239, 0.8); 
+}
+
+/*------------------------------------------Forgot & Terms button---------------------------------------------*/
+
+.forgotpass{
+    position:relative;
+    display: flex;
+    color: aliceblue;
+    cursor: pointer; 
+    padding-left: 180px; 
+    margin-bottom: 5px;
+}
+
+ #terms{
+    color: white; 
+    margin-right: 70px;
+    margin-top: 20px;
+ }
+
+ /*--------------------------------------------Register (new account )-----------------------------------*/
+
+.register{
+    display: flex;
+    margin-top: 20px; 
+    margin-left: 55px;
+}
+
+.register p{
+    color: rgb(247, 251, 255); 
+    margin-right: 5px; 
+    font-size: 1.05rem;
+}
+
+.register a{
+    text-decoration: none;
+    color: rgb(255, 244, 244);
+    font-weight: bolder;
+    font-size: 1.12rem;
+}
+ 
+/*------------------------------------------Hide content Class--------------------------------------*/
+
+.disable{
+    display: none;
+}
+
+/*----------------------------------------Login Button--------------------------------------------*/
+
+.login{
+    background: rgb(255, 159, 42);
+    width: 100%;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 15px;  
+}

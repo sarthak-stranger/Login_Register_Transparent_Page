@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://kit.fontawesome.com/2cebe5cec6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <!---------------------------------------Background Video----------------------------------------------------->
+
+    <video src="/img/Project_09-21(1)_4K_MEDIUM_FR30.mp4"  autoplay preload="metadata" muted loop ></video>
+
+<!------------------------------------------------Form Background------------------------------------------------------------------------>
+
+    <div class="container" id="formbox">
+       <h1 id="title" >Login</h1> 
+       <form action="" method="" id="formbody">
+             <!--------------------------Input Boxes---------------------------------------->
+          <div class="form_input" style="max-height: 0px; border: none;" id="name">
+            <i class="fa-solid fa-file-signature"></i>
+            <input type="text"  placeholder="Enter Your Name" name="name" id="Name">
+          </div>
+          <div class="form_input">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="user" placeholder="Enter Your User Id">
+          </div>
+          <div class="form_input">
+            <i  class="fa-solid fa-lock"></i>
+            <input type="password" id="pass" placeholder="Enter Your Password">
+          </div>
+          <div class="form_input" style="max-height: 0px; border: none;" id="cnfpass">
+            <i  class="fa-solid fa-lock"></i>
+            <input type="password" id="pass2" placeholder="Confirm Your Password">
+          </div> 
+          <p  id="terms" class="disable">
+              <input type="checkbox" name="condition" id="condition" checked />
+              <label for="condition" >Agree to all Terms & Conditions </label>
+          </p>
+           
+            <p class="forgotpass" id="forgotpass" class="disable" >Forgot Password ??</p>
+
+         <!-----------------------------Login Button------------------------------------------->
+
+          <div>
+            <button type="submit" id="loginbtn" class="login" >Login</button>
+          </div>
+            
+          <!----------------------------Below Login Button----------------------------------------->
+          <div class="register" id="newaccount">
+            <p>Don't have account?</p>
+            <a href="" id="register">Register</a>
+          </div>
+          <div class="disable" id="login">
+            <button type="submit" class="login" id="backtologin" >Back to Login</button>
+          </div>
+          
+       </form>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
